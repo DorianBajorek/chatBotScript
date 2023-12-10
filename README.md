@@ -1,5 +1,5 @@
-Filmik z działania bota:
-https://www.youtube.com/watch?v=0zGvyfZXJWw&ab_channel=DorianBajorek
+Filmik z działania bota:  </br>
+https://www.youtube.com/watch?v=0zGvyfZXJWw&ab_channel=DorianBajorek  </br>
 Aby uruchomić bota należy: 
 1. Skontaktować się z autorem (ze mną) w celu uruchomienia serwera z botem
 2. Dodać bota do znajomych na discordzie:  1181258275069628436

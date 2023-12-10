@@ -1,0 +1,14 @@
+    - no, thanks
+    - that's all
+    - no more
+    - no
+    - That will be all
+    - I'm done for now
+    - I've finished ordering
+    - I'm good, thanks
+    - All set
+    - That completes my order
+    - I'm finished
+    - Nothing else, thanks
+    - I'm done ordering
+    - I'm satisfied, thank you

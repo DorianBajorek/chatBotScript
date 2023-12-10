@@ -1,0 +1,942 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - hey
+    - tcx
+    - hey
+    - hey
+    - hey
+    - qql
+    - omz
+    - hey
+    - gje
+    - hey
+    - coxhf
+    - lqpin
+    - lcoeu
+    - ifptw
+    - kqskp
+    - ubzyx
+    - hello
+    - hello
+    - gwhtp
+    - mvfdd
+    - px
+    - hi
+    - hi
+    - hi
+    - hi
+    - hi
+    - kl
+    - hi
+    - xc
+    - ne
+    - hello kiqdv
+    - hello there
+    - xzurt xynsu
+    - pyqiw qpyyc
+    - rdebs absok
+    - hello there
+    - mlhut there
+    - qxhdy fqmef
+    - qpqpy there
+    - hello xyldp
+    - good morning
+    - good eanhhpf
+    - good grdwatr
+    - isbx morning
+    - good morning
+    - good atmiyef
+    - good morning
+    - kmvm morning
+    - stnc morning
+    - good lqcqcqn
+    - fmaf evening
+    - dsag evening
+    - good hhigfmh
+    - good evening
+    - neru evening
+    - tiec evening
+    - zkrq evening
+    - good evening
+    - good evening
+    - zkeu evening
+    - moin
+    - moin
+    - moin
+    - srxd
+    - moin
+    - smaq
+    - moin
+    - moin
+    - moin
+    - hfup
+    - ufc dxsdw
+    - zls wclkn
+    - hey there
+    - hey there
+    - hey aefem
+    - ate jtyzx
+    - hey lttwx
+    - hey bohxm
+    - ppf wlznv
+    - bms there
+    - let's go
+    - let's yj
+    - gkf'm go
+    - let'h go
+    - let's go
+    - let's go
+    - let'k go
+    - let'm xb
+    - let'k wf
+    - let's go
+    - yrw dude
+    - iyx lobf
+    - eik kblq
+    - sxv evmv
+    - hey dude
+    - hey vfxj
+    - uaa ziph
+    - hey dude
+    - hey mjab
+    - hey nean
+    - lcnkbyqtdkr
+    - fbaooxidfum
+    - goodmorning
+    - goodmorning
+    - goodmorning
+    - erhhncwrbbi
+    - ilpibyujyxl
+    - meuvxvxzzfd
+    - goodmorning
+    - goodmorning
+    - goodevening
+    - goodevening
+    - inuehgmfaee
+    - goodevening
+    - msdoyyodpdr
+    - ccpqpfzbpcb
+    - goodevening
+    - goodevening
+    - qhbkojytvmm
+    - vdnmqqhrttv
+    - upic afternoon
+    - good afternoon
+    - kakw afternoon
+    - czrq afternoon
+    - good euwufdadt
+    - good afternoon
+    - good sdsgmwmsz
+    - good afternoon
+    - good afternoon
+    - rnqs afternoon
+
+- intent: open_close
+  examples: |
+    - is open [now](hour)
+    - is restaurant open [now](hour) ?
+    - is restaurant open at [20:00](hour) on [sunday](day)?
+    - Is the restaurant open [right now](hour)?
+    - Can I visit the restaurant [18:00](hour) on [Friday](day)?
+    - What are the opening hours [today](day)?
+    - Are you serving customers at [12:30](hour) [tomorrow](day)?
+    - Are you accepting diners at [15:00](hour) [on Saturday](day)?
+    - Is the restaurant open at [19:00](hour) [tonight](day)?
+    - When do you open on [Monday](day)?
+    - Can I come by at [17:30](hour) this [Thursday](day)?
+    - Are you currently open at [14:00](hour)?
+    - What time do you close on [Sunday](day)?
+    - is open [now](hour)
+    - bj pgjo [now](hour)
+    - is open [now](hour)
+    - is sefo [now](hour)
+    - is bzxd [now](hour)
+    - is open [now](hour)
+    - is open [now](hour)
+    - is dekd [now](hour)
+    - is open [now](hour)
+    - is abhd [now](hour)
+    - is tchhsvfnia open [now](hour) ?
+    - is restaurant open [now](hour) ?
+    - is qjqjbchhho open [now](hour) ?
+    - is restaurant loje [now](hour) ?
+    - is zkagmkhzik pcjd [now](hour) ?
+    - is restaurant qtoa [now](hour) ?
+    - is restaurant open [now](hour) ?
+    - fi restaurant open [now](hour) ?
+    - rw restaurant ycut [now](hour) ?
+    - is restaurant open [now](hour) ?
+    - we restaurant open at [20:00](hour) on [sunday](day)?
+    - is restaurant open at [20:00](hour) on [sunday](day)?
+    - is restaurant open at [20:00](hour) on [sunday](day)?
+    - is restaurant open at [20:00](hour) on [sunday](day)?
+    - is restaurant iaiq at [20:00](hour) on [sunday](day)?
+    - is restaurant open at [20:00](hour) on [sunday](day)?
+    - is restaurant ceyq at [20:00](hour) on [sunday](day)?
+    - is restaurant wbhg at [20:00](hour) on [sunday](day)?
+    - is restaurant atuz at [20:00](hour) pe [sunday](day)?
+    - is restaurant open ek [20:00](hour) on [sunday](day)?
+    - Is the restaurant open [right now](hour)?
+    - wt the restaurant hnbj [right now](hour)?
+    - Is the restaurant open [right now](hour)?
+    - Is the povymztyfi open [right now](hour)?
+    - ar the restaurant open [right now](hour)?
+    - Is vaj eiwmsblzxe open [right now](hour)?
+    - Is the restaurant open [right now](hour)?
+    - Is the restaurant open [right now](hour)?
+    - Is the restaurant zdym [right now](hour)?
+    - Is the restaurant open [right now](hour)?
+    - Can I visit the restaurant [18:00](hour) on [Friday](day)?
+    - Can I dtefq the restaurant [18:00](hour) on [Friday](day)?
+    - Can b visit aqn restaurant [18:00](hour) on [Friday](day)?
+    - Can I pzwab the restaurant [18:00](hour) wm [Friday](day)?
+    - Can I visit the plkansgwpc [18:00](hour) on [Friday](day)?
+    - Can I syqcr the restaurant [18:00](hour) on [Friday](day)?
+    - Can I khtnx the restaurant [18:00](hour) on [Friday](day)?
+    - inh I visit dxs restaurant [18:00](hour) on [Friday](day)?
+    - Can I visit the restaurant [18:00](hour) on [Friday](day)?
+    - Can I dtnul the gbkbqksehk [18:00](hour) on [Friday](day)?
+    - qqqr are wnb opening hours [today](day)?
+    - What are the opening hours [today](day)?
+    - What rnh the iqjrurl hours [today](day)?
+    - What are the opening hours [today](day)?
+    - gmti are aya opening hours [today](day)?
+    - What are the opening hours [today](day)?
+    - kcgc sas the opening hours [today](day)?
+    - What hjj the opening hours [today](day)?
+    - What are the robwkln hours [today](day)?
+    - What are the opening rtrtq [today](day)?
+    - Are you serving customers at [12:30](hour) [tomorrow](day)?
+    - Are you nsfybkd customers at [12:30](hour) [tomorrow](day)?
+    - Are you serving yvvwxuson at [12:30](hour) [tomorrow](day)?
+    - Are you jfuodhr customers at [12:30](hour) [tomorrow](day)?
+    - Are you serving bmoshlysg at [12:30](hour) [tomorrow](day)?
+    - Are you serving customers at [12:30](hour) [tomorrow](day)?
+    - Are you uudzgpy customers at [12:30](hour) [tomorrow](day)?
+    - Are you serving customers at [12:30](hour) [tomorrow](day)?
+    - Are you serving customers at [12:30](hour) [tomorrow](day)?
+    - Are you serving customers zd [12:30](hour) [tomorrow](day)?
+    - Are you accepting diners at [15:00](hour) [on Saturday](day)?
+    - Are you accepting diners at [15:00](hour) [on Saturday](day)?
+    - Are zyy accepting diners at [15:00](hour) [on Saturday](day)?
+    - fqj you accepting diners at [15:00](hour) [on Saturday](day)?
+    - Are you accepting bnlitq at [15:00](hour) [on Saturday](day)?
+    - Are you sgtroomfr diners at [15:00](hour) [on Saturday](day)?
+    - Are you accepting diners at [15:00](hour) [on Saturday](day)?
+    - Are you accepting hziqqe at [15:00](hour) [on Saturday](day)?
+    - Are you accepting diners zr [15:00](hour) [on Saturday](day)?
+    - Are you accepting diners at [15:00](hour) [on Saturday](day)?
+    - Is the restaurant open at [19:00](hour) [tonight](day)?
+    - Is the restaurant open at [19:00](hour) [tonight](day)?
+    - Is the restaurant open at [19:00](hour) [tonight](day)?
+    - Is the restaurant open at [19:00](hour) [tonight](day)?
+    - Is the restaurant open at [19:00](hour) [tonight](day)?
+    - Is the restaurant open at [19:00](hour) [tonight](day)?
+    - Is vkw restaurant open at [19:00](hour) [tonight](day)?
+    - Is pos mkvvywozds open at [19:00](hour) [tonight](day)?
+    - Is the gojizdfefq open at [19:00](hour) [tonight](day)?
+    - yu the restaurant open hm [19:00](hour) [tonight](day)?
+    - When do you open tf [Monday](day)?
+    - When do gwd open kk [Monday](day)?
+    - When do you open ni [Monday](day)?
+    - When do you open on [Monday](day)?
+    - emnx do you open on [Monday](day)?
+    - When do you uwuj on [Monday](day)?
+    - zgoh do you open on [Monday](day)?
+    - When lf afv open on [Monday](day)?
+    - When do keo ucql zt [Monday](day)?
+    - When do pcx open on [Monday](day)?
+    - Can I come by at [17:30](hour) this [Thursday](day)?
+    - Can I come by at [17:30](hour) this [Thursday](day)?
+    - Can I come by mv [17:30](hour) this [Thursday](day)?
+    - Can I come by lc [17:30](hour) this [Thursday](day)?
+    - eem t come by at [17:30](hour) this [Thursday](day)?
+    - Can I come by at [17:30](hour) this [Thursday](day)?
+    - Can I come by at [17:30](hour) this [Thursday](day)?
+    - Can I come by at [17:30](hour) this [Thursday](day)?
+    - Can I come by at [17:30](hour) this [Thursday](day)?
+    - Can I come by at [17:30](hour) this [Thursday](day)?
+    - Are vlf qkjgateeb open at [14:00](hour)?
+    - Are tjm currently lxhx at [14:00](hour)?
+    - Are you ekcqcwhpk open at [14:00](hour)?
+    - Are you currently open at [14:00](hour)?
+    - Are you currently open at [14:00](hour)?
+    - Are you dzwhwoqnj open at [14:00](hour)?
+    - Are you currently open at [14:00](hour)?
+    - Are you kvtjpmdiw open at [14:00](hour)?
+    - Are vkp hbtfcaeem open at [14:00](hour)?
+    - Are you currently open kg [14:00](hour)?
+    - What time do tcl close fx [Sunday](day)?
+    - What faws ew you close on [Sunday](day)?
+    - What time do you close on [Sunday](day)?
+    - What time do you close on [Sunday](day)?
+    - What time do you close on [Sunday](day)?
+    - What time do you close on [Sunday](day)?
+    - What time do you close gc [Sunday](day)?
+    - ceuu time do you yrvht dr [Sunday](day)?
+    - What time ts you close on [Sunday](day)?
+    - vwuc time do pya close on [Sunday](day)?
+
+- intent: menu
+  examples: |
+    - What's on the menu?
+    - What can i order?
+    - What can i eat?
+    - Can you tell me about your menu?
+    - What do you serve here?
+    - Do you have a menu available?
+    - May I see the menu?
+    - What dishes do you offer?
+    - Could you show me the menu?
+    - Any recommendations from the menu?
+    - I'd like to know what's on offer.
+    - What kind of food do you have?
+    - Is there a menu I can look at?
+    - Can you provide details about the menu?
+    - What are your specialties?
+    - Tell me more about your menu options.
+    - Menu, please?
+    - What'b on kwg menu?
+    - amdn's on the sgee?
+    - What's fe aot menu?
+    - What's fb the menu?
+    - What's rx the fdcv?
+    - drvp's on fcu menu?
+    - What's on the menu?
+    - What's on the udaw?
+    - What's on the wrpr?
+    - What's mo the menu?
+    - What dbk i order?
+    - What can i order?
+    - What wju i order?
+    - What can i tcrix?
+    - What can i tdtav?
+    - What can c icbql?
+    - bdfn can i order?
+    - reki can i order?
+    - ygsl xnh i order?
+    - What hgf i order?
+    - What vly i qnq?
+    - rejl can u lmx?
+    - xuwy can i adg?
+    - powc can i eat?
+    - What can i eat?
+    - What jnw x eat?
+    - What can o eat?
+    - What lhk v eat?
+    - agyr can i eat?
+    - What can i eat?
+    - Can you tell me rstsh pphv menu?
+    - Can you tell yp about your menu?
+    - Can you tell me about your menu?
+    - Can you tell me about your menu?
+    - Can you tell me dfvnf your menu?
+    - Can pyz tell ar about your menu?
+    - qzp jcy tell me about your menu?
+    - Can you ndii me about your menu?
+    - ref you zcwe me about your menu?
+    - Can you pzau me about your hxpd?
+    - What do you serve here?
+    - What qt you serve here?
+    - What gi you serve here?
+    - What do you serve here?
+    - What do you ltswm here?
+    - otrj do you serve here?
+    - What zz ucg serve here?
+    - What do you serve pmmi?
+    - What gx you qkwey here?
+    - izey js you rygdb here?
+    - Do you have s menu available?
+    - bg you have a gjmb available?
+    - Do you have a menu ubdkvbxrm?
+    - Do gsd jvxf a menu available?
+    - Do you have a rsxd available?
+    - Do you have k menu available?
+    - kg pvm have a menu available?
+    - Do you keuf a menu pubzkgarn?
+    - ym you have a menu available?
+    - Do you have a menu available?
+    - May w see the menu?
+    - May I see the menu?
+    - May I see the menu?
+    - May I ofq the menu?
+    - qiq e see the menu?
+    - May I see the menu?
+    - May v ehw the menu?
+    - tqn y see the menu?
+    - May h see the yfcq?
+    - May t see the menu?
+    - What nwtsxc do you offer?
+    - What dishes vu you wiknd?
+    - What dishes gd you hzphx?
+    - What aclxoi do you fjogm?
+    - What sbfitj do wuq offer?
+    - What ejbjwf do you uaidk?
+    - What dishes yu you offer?
+    - What dishes do you vnynj?
+    - What dishes do you offer?
+    - What dishes do bvh offer?
+    - ygafq you show me the menu?
+    - Could you gdnp me the kkex?
+    - Could you show me ppt menu?
+    - lnvro een show me the menu?
+    - uipdo you show me rxz menu?
+    - Could you show pg bpb menu?
+    - Could zql show zc abx menu?
+    - Could you show me the menu?
+    - Could you show cw vid menu?
+    - vjpvs you show me the gkch?
+    - Any amywezkgzcgouev from the menu?
+    - Any dcvwseuykgpckao onhr prd menu?
+    - Any recommendations pgjo the menu?
+    - Any recommendations evds the menu?
+    - Any recommendations from the menu?
+    - Any recommendations xhle the menu?
+    - brm uvnwkeprmdanpux from the menu?
+    - Any recommendations from bjn menu?
+    - Any recommendations from the menu?
+    - htj recommendations yvrv the menu?
+    - I'd like to huwf what's on offer.
+    - I'd like to know what'u on offer.
+    - I'd like to zjcq what's on fmhvv.
+    - I'd like to know what's on offer.
+    - I'd like to bwzh what'c on offer.
+    - n'd ysod wj know what's on offer.
+    - I'd like to know what's on offer.
+    - I'd like vq know what's on offer.
+    - I'd xbdz to suqf what's on offer.
+    - l'd like to know what's jr wseqa.
+    - pufl kind of food do you have?
+    - ckhe kind of food do you have?
+    - What allw of food do you cwai?
+    - What kind of food do you rwhx?
+    - What lckb of food do you have?
+    - What kind of food do you have?
+    - What kind of food do epj have?
+    - What kind tl food do you ahqk?
+    - What kind of food do you kvhb?
+    - What kind lq food do you have?
+    - Is there a menu I can look ub?
+    - Is there a menu I gew look at?
+    - Is there p menu I zbz look at?
+    - Is there a menu p can look vi?
+    - Is there a menu s can look vs?
+    - Is there a menu I can look at?
+    - Is there y menu I dmk mteh at?
+    - ae pnnyx a menu q can look at?
+    - Is there a ygog I can xamp at?
+    - Is cnwdq a menu I can look of?
+    - Can you provide nvcxytv about the menu?
+    - Can you provide details about the menu?
+    - ffu you provide wmlycmc about the menu?
+    - Can hmz afzmgzr details about the menu?
+    - Can you provide details about the yikk?
+    - Can you provide details about amp menu?
+    - Can you provide details soand the menu?
+    - Can you lsxtbtt details yemog the menu?
+    - Can you provide details hlssv the menu?
+    - Can you hptmlpc yuoikwi about the menu?
+    - What are your specialties?
+    - What are your specialties?
+    - What are tndv specialties?
+    - What are your wvcsmusdynh?
+    - What are your fovlemsbsmy?
+    - zjvy are fhpc specialties?
+    - What are your ojpsaqmsmge?
+    - zofr are ihfk specialties?
+    - What rjq your ocyhvsrqfsd?
+    - usck are urzy specialties?
+    - aqbc me more about chqa menu options.
+    - zkfv me more nlrqv your menu options.
+    - Tell me more about rdfg menu options.
+    - Tell me more about your menu options.
+    - Tell me rpnz tixqe your menu options.
+    - Tell me more about your lvfm options.
+    - Tell me more shebc your menu btibhxp.
+    - bmgj me more about your menu options.
+    - Tell me lyiz about wfmx menu options.
+    - Tell me more about your gogd options.
+    - Menu, abouku?
+    - jrkw, please?
+    - Menu, please?
+    - bubx, please?
+    - Menu, ybfhyu?
+    - Menu, please?
+    - zngz, hqtttb?
+    - Menu, dhhfbq?
+    - Menu, please?
+    - Menu, please?
+
+- intent: order_food
+  examples: |
+    - Give me a [pizza](food_item) without [mushrooms](topping).
+    - I want a [pizza](food_item) with [no onions](topping), please.
+    - [Burger](food_item) without [cheese](topping), please.
+    - Can I get a [hotdog](food_item) with [no mustard](topping)?
+    - I'll take a [pizza](food_item) with [no olives](topping) and [burger](side_dish) without [ketchup](condiment), please.
+    - One [burger](food_item) without [pickles](topping), please.
+    - Can I have a [pizza](food_item) without [bell peppers](topping), please?
+    - I'd like to order a [burger](food_item) with [no lettuce](topping) and [fries](side_dish) with [no salt](condiment), please.
+    - Could I get a [hotdog](food_item) to go without [relish](topping)?
+    - I'll take a [pizza](food_item) without [anchovies](topping) and a side of [fries](side_dish) without [mayo](condiment), please.
+    - May I have a [burger](food_item) without [onions](topping) and a [hotdog](food_item) without [ketchup](condiment), please?
+    - I'd like to order some [fries](side_dish) without [salt](condiment) and a [pizza](food_item) without [mushrooms](topping), please.
+    - Can I get a [hotdog](food_item) with [no relish](topping) and [fries](side_dish) with [no ketchup](condiment) on the side, please?
+    - I'd like to order a [burger](food_item) for delivery without [tomatoes](topping), please.
+    - ctrb me a [pizza](food_item) without [mushrooms](topping).
+    - wrec me a [pizza](food_item) without [mushrooms](topping).
+    - ozow me a [pizza](food_item) without [mushrooms](topping).
+    - Give ld a [pizza](food_item) without [mushrooms](topping).
+    - qyyf me a [pizza](food_item) without [mushrooms](topping).
+    - Give jz a [pizza](food_item) without [mushrooms](topping).
+    - Give me a [pizza](food_item) zqmvxvr [mushrooms](topping).
+    - Give vu d [pizza](food_item) without [mushrooms](topping).
+    - Give me a [pizza](food_item) without [mushrooms](topping).
+    - Give me a [pizza](food_item) pcinkfa [mushrooms](topping).
+    - I vtmh a [pizza](food_item) with [no onions](topping), please.
+    - I want a [pizza](food_item) with [no onions](topping), please.
+    - I want a [pizza](food_item) etgc [no onions](topping), please.
+    - I want e [pizza](food_item) with [no onions](topping), please.
+    - I want h [pizza](food_item) with [no onions](topping), xhoded.
+    - I want e [pizza](food_item) with [no onions](topping), please.
+    - x want a [pizza](food_item) upfz [no onions](topping), please.
+    - I want a [pizza](food_item) with [no onions](topping), please.
+    - I want a [pizza](food_item) with [no onions](topping), please.
+    - I want a [pizza](food_item) bwaf [no onions](topping), uioupl.
+    - [Burger](food_item) without [cheese](topping), please.
+    - [Burger](food_item) without [cheese](topping), please.
+    - [Burger](food_item) qzcqjzi [cheese](topping), sthhty.
+    - [Burger](food_item) without [cheese](topping), please.
+    - [Burger](food_item) tkwsewl [cheese](topping), please.
+    - [Burger](food_item) without [cheese](topping), please.
+    - [Burger](food_item) without [cheese](topping), wudztd.
+    - [Burger](food_item) without [cheese](topping), please.
+    - [Burger](food_item) without [cheese](topping), please.
+    - [Burger](food_item) without [cheese](topping), please.
+    - Can I get s [hotdog](food_item) with [no mustard](topping)?
+    - Can I get a [hotdog](food_item) yjqc [no mustard](topping)?
+    - Can I hzw a [hotdog](food_item) ylgl [no mustard](topping)?
+    - hcd I get t [hotdog](food_item) with [no mustard](topping)?
+    - Can I get a [hotdog](food_item) with [no mustard](topping)?
+    - Can c get a [hotdog](food_item) with [no mustard](topping)?
+    - Can I get a [hotdog](food_item) with [no mustard](topping)?
+    - Can c get o [hotdog](food_item) with [no mustard](topping)?
+    - Can I get q [hotdog](food_item) with [no mustard](topping)?
+    - Can s get a [hotdog](food_item) oqgz [no mustard](topping)?
+    - I'll take a [pizza](food_item) with [no olives](topping) and [burger](side_dish) zxouucu [ketchup](condiment), please.
+    - I'll take a [pizza](food_item) with [no olives](topping) and [burger](side_dish) without [ketchup](condiment), please.
+    - e'up take a [pizza](food_item) with [no olives](topping) and [burger](side_dish) without [ketchup](condiment), please.
+    - I'll take a [pizza](food_item) with [no olives](topping) and [burger](side_dish) without [ketchup](condiment), please.
+    - I'll take a [pizza](food_item) with [no olives](topping) and [burger](side_dish) without [ketchup](condiment), please.
+    - I'll take a [pizza](food_item) with [no olives](topping) and [burger](side_dish) without [ketchup](condiment), please.
+    - j'll take a [pizza](food_item) with [no olives](topping) and [burger](side_dish) without [ketchup](condiment), please.
+    - I'll take a [pizza](food_item) with [no olives](topping) and [burger](side_dish) without [ketchup](condiment), please.
+    - I'll take v [pizza](food_item) with [no olives](topping) and [burger](side_dish) without [ketchup](condiment), please.
+    - I'll take a [pizza](food_item) uaac [no olives](topping) and [burger](side_dish) without [ketchup](condiment), please.
+    - One [burger](food_item) without [pickles](topping), please.
+    - One [burger](food_item) without [pickles](topping), please.
+    - acu [burger](food_item) without [pickles](topping), please.
+    - One [burger](food_item) without [pickles](topping), please.
+    - One [burger](food_item) without [pickles](topping), please.
+    - One [burger](food_item) without [pickles](topping), please.
+    - One [burger](food_item) without [pickles](topping), mpzcek.
+    - One [burger](food_item) zvgghfz [pickles](topping), please.
+    - hjm [burger](food_item) without [pickles](topping), please.
+    - One [burger](food_item) without [pickles](topping), please.
+    - Can I have a [pizza](food_item) without [bell peppers](topping), please?
+    - Can I have a [pizza](food_item) without [bell peppers](topping), please?
+    - Can I have a [pizza](food_item) without [bell peppers](topping), please?
+    - jwa I have a [pizza](food_item) without [bell peppers](topping), please?
+    - fdg I phjn a [pizza](food_item) without [bell peppers](topping), please?
+    - Can I have a [pizza](food_item) without [bell peppers](topping), please?
+    - Can I have a [pizza](food_item) without [bell peppers](topping), please?
+    - Can I have a [pizza](food_item) without [bell peppers](topping), please?
+    - Can I have a [pizza](food_item) eygzvmf [bell peppers](topping), crlvhx?
+    - Can I have a [pizza](food_item) apfaqrw [bell peppers](topping), please?
+    - I'd like to order a [burger](food_item) with [no lettuce](topping) and [fries](side_dish) with [no salt](condiment), please.
+    - I'd like to dplpp a [burger](food_item) with [no lettuce](topping) and [fries](side_dish) with [no salt](condiment), please.
+    - I'd like to order a [burger](food_item) with [no lettuce](topping) and [fries](side_dish) with [no salt](condiment), hhdqvg.
+    - I'd like to order a [burger](food_item) qhjd [no lettuce](topping) and [fries](side_dish) with [no salt](condiment), please.
+    - I'd like to order a [burger](food_item) with [no lettuce](topping) and [fries](side_dish) with [no salt](condiment), please.
+    - I'j like to order a [burger](food_item) with [no lettuce](topping) and [fries](side_dish) with [no salt](condiment), please.
+    - I'd like to order a [burger](food_item) with [no lettuce](topping) and [fries](side_dish) with [no salt](condiment), please.
+    - I'v like to order a [burger](food_item) with [no lettuce](topping) and [fries](side_dish) with [no salt](condiment), please.
+    - I'd like to order a [burger](food_item) with [no lettuce](topping) and [fries](side_dish) with [no salt](condiment), please.
+    - I'd like to order a [burger](food_item) with [no lettuce](topping) and [fries](side_dish) with [no salt](condiment), ibpxqc.
+    - Could I get a [hotdog](food_item) pz go without [relish](topping)?
+    - kjjsx I get a [hotdog](food_item) to go without [relish](topping)?
+    - Could I get a [hotdog](food_item) to go without [relish](topping)?
+    - Could I pba a [hotdog](food_item) to go without [relish](topping)?
+    - Could I get a [hotdog](food_item) to go without [relish](topping)?
+    - Could y get a [hotdog](food_item) to go without [relish](topping)?
+    - Could I get a [hotdog](food_item) to go without [relish](topping)?
+    - Could w get a [hotdog](food_item) to pr without [relish](topping)?
+    - igkyl I get a [hotdog](food_item) to go without [relish](topping)?
+    - Could i get a [hotdog](food_item) to go without [relish](topping)?
+    - I'll take a [pizza](food_item) without [anchovies](topping) and a side of [fries](side_dish) without [mayo](condiment), please.
+    - I'll take a [pizza](food_item) without [anchovies](topping) and a side of [fries](side_dish) without [mayo](condiment), please.
+    - q'll take a [pizza](food_item) without [anchovies](topping) nzm a side of [fries](side_dish) without [mayo](condiment), please.
+    - I'll take a [pizza](food_item) uqxfzbb [anchovies](topping) and a side of [fries](side_dish) without [mayo](condiment), please.
+    - I'll take a [pizza](food_item) without [anchovies](topping) and a side of [fries](side_dish) without [mayo](condiment), please.
+    - I'll mbos f [pizza](food_item) without [anchovies](topping) and a side of [fries](side_dish) without [mayo](condiment), please.
+    - r'ad take a [pizza](food_item) without [anchovies](topping) and a side of [fries](side_dish) without [mayo](condiment), please.
+    - I'll take a [pizza](food_item) without [anchovies](topping) and a side of [fries](side_dish) without [mayo](condiment), please.
+    - I'll take a [pizza](food_item) without [anchovies](topping) and a side of [fries](side_dish) without [mayo](condiment), please.
+    - I'll take a [pizza](food_item) without [anchovies](topping) and a side of [fries](side_dish) without [mayo](condiment), please.
+    - wmi I have a [burger](food_item) without [onions](topping) and a [hotdog](food_item) without [ketchup](condiment), please?
+    - May I have a [burger](food_item) without [onions](topping) and a [hotdog](food_item) without [ketchup](condiment), please?
+    - May f have a [burger](food_item) without [onions](topping) and a [hotdog](food_item) without [ketchup](condiment), please?
+    - pvs I have a [burger](food_item) eyycsdi [onions](topping) and a [hotdog](food_item) without [ketchup](condiment), please?
+    - May I have a [burger](food_item) without [onions](topping) vvc a [hotdog](food_item) without [ketchup](condiment), please?
+    - May I have a [burger](food_item) without [onions](topping) and a [hotdog](food_item) without [ketchup](condiment), please?
+    - May I have a [burger](food_item) without [onions](topping) and a [hotdog](food_item) without [ketchup](condiment), please?
+    - May I have a [burger](food_item) without [onions](topping) and a [hotdog](food_item) without [ketchup](condiment), please?
+    - May I have a [burger](food_item) without [onions](topping) and a [hotdog](food_item) without [ketchup](condiment), please?
+    - May I have a [burger](food_item) without [onions](topping) and a [hotdog](food_item) without [ketchup](condiment), please?
+    - w'd like to cjfwf some [fries](side_dish) without [salt](condiment) and a [pizza](food_item) without [mushrooms](topping), please.
+    - I'd like to order fhyf [fries](side_dish) without [salt](condiment) and a [pizza](food_item) without [mushrooms](topping), please.
+    - I'd like to order some [fries](side_dish) without [salt](condiment) tcw a [pizza](food_item) without [mushrooms](topping), please.
+    - I'd like to order some [fries](side_dish) without [salt](condiment) and a [pizza](food_item) without [mushrooms](topping), please.
+    - I'u like to order some [fries](side_dish) without [salt](condiment) and a [pizza](food_item) without [mushrooms](topping), please.
+    - I'd like to order some [fries](side_dish) without [salt](condiment) and a [pizza](food_item) without [mushrooms](topping), please.
+    - I'w like to zjyjn some [fries](side_dish) without [salt](condiment) and a [pizza](food_item) without [mushrooms](topping), please.
+    - I'b like to order some [fries](side_dish) without [salt](condiment) and a [pizza](food_item) without [mushrooms](topping), please.
+    - I'd like to order some [fries](side_dish) twjtstb [salt](condiment) and a [pizza](food_item) without [mushrooms](topping), please.
+    - I'd like to order some [fries](side_dish) without [salt](condiment) and a [pizza](food_item) without [mushrooms](topping), please.
+    - Can I bpu a [hotdog](food_item) afxs [no relish](topping) and [fries](side_dish) with [no ketchup](condiment) on the side, please?
+    - Can I get a [hotdog](food_item) with [no relish](topping) and [fries](side_dish) with [no ketchup](condiment) on the side, please?
+    - icl a get a [hotdog](food_item) with [no relish](topping) and [fries](side_dish) with [no ketchup](condiment) on the side, please?
+    - Can I get a [hotdog](food_item) nley [no relish](topping) vei [fries](side_dish) with [no ketchup](condiment) on the side, please?
+    - Can u get a [hotdog](food_item) with [no relish](topping) and [fries](side_dish) with [no ketchup](condiment) on the side, please?
+    - Can I get a [hotdog](food_item) with [no relish](topping) and [fries](side_dish) with [no ketchup](condiment) on the side, please?
+    - Can I get w [hotdog](food_item) with [no relish](topping) and [fries](side_dish) with [no ketchup](condiment) on the side, please?
+    - Can I get a [hotdog](food_item) with [no relish](topping) and [fries](side_dish) with [no ketchup](condiment) on the side, please?
+    - Can I get a [hotdog](food_item) with [no relish](topping) uhx [fries](side_dish) with [no ketchup](condiment) on the side, please?
+    - Can I get a [hotdog](food_item) with [no relish](topping) sae [fries](side_dish) with [no ketchup](condiment) on the side, please?
+    - I'd like to rprzj a [burger](food_item) for delivery without [tomatoes](topping), please.
+    - I'd like to order a [burger](food_item) for delivery without [tomatoes](topping), please.
+    - I'e like to order a [burger](food_item) for abwpmhxs without [tomatoes](topping), please.
+    - I'd like to order a [burger](food_item) for delivery without [tomatoes](topping), please.
+    - I'l like to order a [burger](food_item) for delivery without [tomatoes](topping), please.
+    - I'd igsb to order a [burger](food_item) for delivery without [tomatoes](topping), iqidgy.
+    - I'd ymzb to order a [burger](food_item) for delivery without [tomatoes](topping), please.
+    - I'd like to rpbdy a [burger](food_item) wdf delivery without [tomatoes](topping), please.
+    - I'd like nu order a [burger](food_item) for delivery without [tomatoes](topping), please.
+    - I'd like to order g [burger](food_item) irl delivery hkuxcfk [tomatoes](topping), please.
+
+- intent: finish_order
+  examples: |
+    - no, thanks
+    - that's all
+    - no more
+    - no
+    - That will be all
+    - I'm done for now
+    - I've finished ordering
+    - I'm good, thanks
+    - All set
+    - That completes my order
+    - I'm finished
+    - Nothing else, thanks
+    - I'm done ordering
+    - I'm satisfied, thank you
+    - ec, ziyoyx
+    - fn, thanks
+    - ql, thanks
+    - ln, wykdch
+    - no, wufonb
+    - lh, thanks
+    - kk, thanks
+    - eu, thanks
+    - no, thanks
+    - no, ieykwo
+    - ztpm's wek
+    - that'z all
+    - jlfk's all
+    - that's all
+    - that's all
+    - that'q all
+    - that's cdo
+    - fatb's lkw
+    - that'l all
+    - that's all
+    - no more
+    - no zify
+    - fi more
+    - vk buag
+    - kr rknj
+    - zm more
+    - no bfml
+    - wk more
+    - dk sfqb
+    - no more
+    - fn
+    - no
+    - fp
+    - ym
+    - no
+    - no
+    - pa
+    - no
+    - no
+    - ob
+    - ettb will pw all
+    - eqhs will be gcf
+    - That will be all
+    - That will be all
+    - zivr will gn zdz
+    - That will sr all
+    - That will be kjr
+    - eupy will hx all
+    - That rhqy zu all
+    - That pfvy pt all
+    - I'm done for now
+    - I'n done for tpi
+    - t'm done eua now
+    - I'm wbrb for now
+    - I's done for now
+    - I'm done jqt now
+    - o'f done for now
+    - I'm done for now
+    - l'm done for now
+    - I'w done for now
+    - m'ix finished ordering
+    - I'zu finished ordering
+    - I'ba finished ordering
+    - I've finished ordering
+    - I've aowboaze ordering
+    - I've finished ordering
+    - I've finished ordering
+    - I'pw finished ordering
+    - b've yqrzvjiz alikvrqh
+    - a've finished xkxojgiw
+    - I'm sfpg, thanks
+    - b'p good, thanks
+    - m'm ejki, thanks
+    - I'm good, thanks
+    - j'i umwu, thanks
+    - I'm good, thanks
+    - m'm good, qsmejn
+    - a'm good, thanks
+    - r'm good, thanks
+    - I'm good, thanks
+    - ubj set
+    - ltp eid
+    - All nan
+    - All set
+    - All pth
+    - All set
+    - All set
+    - nnv flo
+    - All set
+    - All tga
+    - That completes my order
+    - That completes my order
+    - That completes my cfxpm
+    - That dwkvxodmh my order
+    - That ohzdglqxw my tfnjl
+    - That completes my order
+    - tato vzvoxobsy my order
+    - That completes my spqlp
+    - That completes my ctcci
+    - That ddsoqviqd my order
+    - r'm finished
+    - i'm finished
+    - I'r tgtqqfcs
+    - f'm vtescbne
+    - I'v jhbvyavl
+    - e't rycyzpwp
+    - o'm drseruoy
+    - I'p finished
+    - i'm finished
+    - I'm finished
+    - fcrubwa else, thanks
+    - Nothing else, aefvvf
+    - Nothing mbjv, fqedtm
+    - Nothing njpk, thanks
+    - Nothing uvva, vcltop
+    - Nothing else, rgvdhw
+    - iarantq else, welsfj
+    - Nothing else, ypshwv
+    - Nothing else, boyzrq
+    - cpxzpwt fmvd, thanks
+    - I'm sszd ordering
+    - I'm done ordering
+    - a'm done ordering
+    - I'm done ordering
+    - m'm done ordering
+    - k'm ekkv ordering
+    - I'b done umnazsxy
+    - I'i done ordering
+    - I'm done ordering
+    - I'i done wtumusmf
+    - l'm satisfied, znhxj you
+    - I'm jzkbzqaqu, thank you
+    - I'm satisfied, mvxqq you
+    - I'i satisfied, thank you
+    - w'm ojhhikqcr, thank you
+    - I'm satisfied, thank you
+    - I'm olkoocutg, ugire you
+    - I'e satisfied, thank you
+    - I'm flbyqwxgk, yrdjy lwc
+    - I'm satisfied, thank you
+
+- intent: goodbye
+  examples: |
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - lhui md
+    - kprh ld
+    - good by
+    - good by
+    - qdnj by
+    - good by
+    - good cb
+    - good fn
+    - good oq
+    - good lw
+    - cee you later
+    - bjh vwo later
+    - uuz qua later
+    - wlj you later
+    - cee you later
+    - goh you later
+    - vun frl hgctf
+    - psb you later
+    - qlk you szbpd
+    - ofo kpw later
+    - iqql night
+    - wcgs night
+    - good hwevl
+    - good night
+    - scnm ojzuk
+    - sjwn night
+    - lijv night
+    - good jfbgs
+    - qvww night
+    - pvnc night
+    - qbz
+    - yuc
+    - igy
+    - fpd
+    - kuu
+    - hkc
+    - hwn
+    - bye
+    - qsw
+    - fun
+    - xcmyomg
+    - goodbye
+    - goodbye
+    - goodbye
+    - cdhwhjv
+    - hlzqspr
+    - goodbye
+    - rgfapdl
+    - wjfxpkh
+    - goodbye
+    - wceb h nice day
+    - have a nice iiv
+    - jqjp a nice cyr
+    - have a rcdl day
+    - have l nice day
+    - have q nice day
+    - have a bkqw day
+    - brrp a nice day
+    - have u kawp day
+    - gmoy a nice day
+    - see you fsbyip
+    - see you mgsfcy
+    - gda you hyhdsy
+    - see you kcrkjf
+    - see you around
+    - krx lzo around
+    - see you around
+    - see you around
+    - see you around
+    - uxs hkc around
+    - nrc bye
+    - ods bye
+    - ppk bye
+    - hjr bye
+    - dpg bye
+    - dgi bye
+    - bye bye
+    - efu bye
+    - bye bye
+    - rig bye
+    - see you later
+    - see nfd later
+    - see you later
+    - btk huy later
+    - see you later
+    - see you later
+    - crl whm later
+    - see you hthgl
+    - kjf you later
+    - adv you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?

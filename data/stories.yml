@@ -1,0 +1,40 @@
+version: "3.1"
+
+stories:
+
+- story: tell open
+  steps:
+  - intent: open_close
+  - action: action_when_open
+
+- story: order something
+  steps:
+  - intent: menu
+  - action: utter_menu
+  - intent: order_food
+  - action: action_order_food
+
+- story: order finish
+  steps:
+  - intent: finish_order
+  - action: action_finish
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
